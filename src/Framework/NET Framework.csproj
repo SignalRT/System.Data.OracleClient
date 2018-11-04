@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3AC9869-4E0E-48EE-9D68-CC7A6F545D57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Data.OracleClient</RootNamespace>
+    <AssemblyName>SignalRT.System.Data.OracleClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Consts.cs">
+      <Link>Consts.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciAttributeType.cs">
+      <Link>OciAttributeType.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciBindHandle.cs">
+      <Link>OciBindHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciCalls.cs">
+      <Link>OciCalls.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciColumnInfo.cs">
+      <Link>OciColumnInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciCredentialType.cs">
+      <Link>OciCredentialType.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciDataType.cs">
+      <Link>OciDataType.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciDateTimeDescriptor.cs">
+      <Link>OciDateTimeDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciDefineHandle.cs">
+      <Link>OciDefineHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciDescriptorHandle.cs">
+      <Link>OciDescriptorHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciEnvironmentHandle.cs">
+      <Link>OciEnvironmentHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciEnvironmentMode.cs">
+      <Link>OciEnvironmentMode.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciErrorHandle.cs">
+      <Link>OciErrorHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciErrorInfo.cs">
+      <Link>OciErrorInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciExecuteMode.cs">
+      <Link>OciExecuteMode.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciHandle.cs">
+      <Link>OciHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciHandleType.cs">
+      <Link>OciHandleType.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciIntervalDescriptor.cs">
+      <Link>OciIntervalDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciLobLocator.cs">
+      <Link>OciLobLocator.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciLobType.cs">
+      <Link>OciLobType.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciNlsServiceType.cs">
+      <Link>OciNlsServiceType.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciParameterDescriptor.cs">
+      <Link>OciParameterDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciPointerType.cs">
+      <Link>OciPointerType.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciRowIdDescriptor.cs">
+      <Link>OciRowIdDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciServerHandle.cs">
+      <Link>OciServerHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciServiceHandle.cs">
+      <Link>OciServiceHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciSessionHandle.cs">
+      <Link>OciSessionHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciSessionMode.cs">
+      <Link>OciSessionMode.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciStatementHandle.cs">
+      <Link>OciStatementHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciStatementLanguage.cs">
+      <Link>OciStatementLanguage.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciStatementMode.cs">
+      <Link>OciStatementMode.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciStatementType.cs">
+      <Link>OciStatementType.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciTransactionFlags.cs">
+      <Link>OciTransactionFlags.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient.Oci\OciTransactionHandle.cs">
+      <Link>OciTransactionHandle.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OciGlue.cs">
+      <Link>OciGlue.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleBFile.cs">
+      <Link>OracleBFile.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleBinary.cs">
+      <Link>OracleBinary.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleBoolean.cs">
+      <Link>OracleBoolean.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleClientFactory.cs">
+      <Link>OracleClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleCommand.cs">
+      <Link>OracleCommand.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleCommandBuilder.cs">
+      <Link>OracleCommandBuilder.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleConnection.cs">
+      <Link>OracleConnection.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleConnectionPool.cs">
+      <Link>OracleConnectionPool.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleConnectionPoolManager.cs">
+      <Link>OracleConnectionPoolManager.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleConnectionStringBuilder.cs">
+      <Link>OracleConnectionStringBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleDataAdapter.cs">
+      <Link>OracleDataAdapter.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleDataReader.cs">
+      <Link>OracleDataReader.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleDateTime.cs">
+      <Link>OracleDateTime.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleException.cs">
+      <Link>OracleException.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleInfoMessageEventArgs.cs">
+      <Link>OracleInfoMessageEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleInfoMessageEventHandler.cs">
+      <Link>OracleInfoMessageEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleLob.cs">
+      <Link>OracleLob.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleLobOpenMode.cs">
+      <Link>OracleLobOpenMode.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleMonthSpan.cs">
+      <Link>OracleMonthSpan.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleNumber.cs">
+      <Link>OracleNumber.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleParameter.cs">
+      <Link>OracleParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleParameterCollection.cs">
+      <Link>OracleParameterCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OraclePermission.cs">
+      <Link>OraclePermission.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OraclePermissionAttribute.cs">
+      <Link>OraclePermissionAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleRowUpdatedEventArgs.cs">
+      <Link>OracleRowUpdatedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleRowUpdatedEventHandler.cs">
+      <Link>OracleRowUpdatedEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleRowUpdatingEventArgs.cs">
+      <Link>OracleRowUpdatingEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleRowUpdatingEventHandler.cs">
+      <Link>OracleRowUpdatingEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleString.cs">
+      <Link>OracleString.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleTimeSpan.cs">
+      <Link>OracleTimeSpan.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleTransaction.cs">
+      <Link>OracleTransaction.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Data.OracleClient\OracleType.cs">
+      <Link>OracleType.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
